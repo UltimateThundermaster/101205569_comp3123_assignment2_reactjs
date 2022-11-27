@@ -54,7 +54,7 @@ const Dashboard = () => {
           </thead>
           <tbody>
             {
-              employeeData.map((employee) => (
+              employeeData && employeeData.map((employee) => (
                 <tr>
                   <td>{employee.first_name}</td>
                   <td>{employee.last_name}</td>
