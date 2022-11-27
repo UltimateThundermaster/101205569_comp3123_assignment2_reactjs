@@ -12,7 +12,7 @@ app.use(express.json())
 app.use('/api/user', userRouter)
 app.use('/api/emp', auth, employeeRouter)
 
-const port = 8000
+const port = process.env.PORT || 8000
 
 app.listen(port, () => {
     try {
